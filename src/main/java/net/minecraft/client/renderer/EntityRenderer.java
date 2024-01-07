@@ -3,6 +3,9 @@ package net.minecraft.client.renderer;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
 import com.google.gson.JsonSyntaxException;
+
+import dev.moonrise.MoonRise;
+
 import java.io.IOException;
 import java.nio.FloatBuffer;
 import java.util.List;
@@ -1478,6 +1481,8 @@ public class EntityRenderer implements IResourceManagerReloadListener
         }
 
         this.mc.mcProfiler.endStartSection("hand");
+
+        MoonRise.moduleManager.onRender();
 
         if (this.renderHand)
         {

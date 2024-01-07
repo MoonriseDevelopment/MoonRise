@@ -1,5 +1,6 @@
 package net.minecraft.client.entity;
 
+import dev.moonrise.MoonRise;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.audio.MovingSoundMinecartRiding;
 import net.minecraft.client.audio.PositionedSoundRecord;
@@ -714,6 +715,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
      */
     public void onLivingUpdate()
     {
+        MoonRise.moduleManager.onUpdate();
         if (this.sprintingTicksLeft > 0)
         {
             --this.sprintingTicksLeft;
