@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import dev.moonrise.MoonRise;
 import dev.moonrise.module.movement.*;
+import dev.moonrise.module.player.FastPlace;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 
@@ -22,7 +23,8 @@ public class ModuleManager {
 
 
         //PLAYER
-
+        
+        newMod(new FastPlace());
 
         //RENDER
 

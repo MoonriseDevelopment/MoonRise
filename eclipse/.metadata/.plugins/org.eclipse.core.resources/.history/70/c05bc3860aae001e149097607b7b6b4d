@@ -1,0 +1,11 @@
+package dev.moonrise.module.player;
+
+import org.lwjgl.input.Keyboard;
+
+import dev.moonrise.module.Category;
+
+public class FastPlace extends Module{
+    public FastPlace() {
+        super("FastPlace", Keyboard.KEY_F, Category.PLAYER);
+    }
+}

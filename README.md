@@ -14,4 +14,17 @@ a hacked client for minecraft
 1. download this repo's zip file and extract it
 2. open a terminal in the extracted folder
 3. type ` ./gradlew build ` in the terminal
-4.  type ` ./gradlew jar ` in the terminal
+4. type ` ./gradlew jar ` in the terminal
+
+
+# running the client (for developers)
+
+## for windows
+1. download this repo's zip file and extract it
+2. open a cmd in the extracted folder
+3. type ` .\gradlew.bat runclient ` in the terminal
+
+## for linux
+1. download this repo's zip file and extract it
+2. open a terminal in the extracted folder
+3. type ` ./gradlew runclient ` in the terminal

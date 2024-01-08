@@ -27,3 +27,15 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
+
+tasks.register('runclient', JavaExec) {
+    group = "MCP"
+    description = "Runs the client"
+    classpath sourceSets.main.runtimeClasspath
+    if (System.getProperty("os.name").toLowerCase().contains("mac")) {
+        jvmArgs '-XstartOnFirstThread'
+    }
+
+    workingDir file('jars')
+    main 'Start'
+}
