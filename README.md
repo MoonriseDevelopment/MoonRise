@@ -1,8 +1,17 @@
-# gradleMCP
-MCP for Gradle! It exists!
+# moonrise client [![Java CI with Gradle](https://github.com/MoonriseDevelopment/MoonRise/actions/workflows/gradle.yml/badge.svg)](https://github.com/MoonriseDevelopment/MoonRise/actions/workflows/gradle.yml)
+a hacked client for minecraft
 
-## CURRENTLY ONLY FOR 1.8.9
-1.9+ coming soon I guess...
-Please be patient as I work things out.
+# compiling
 
--Fatal
+## for windows
+1. download this repo's zip file and extract it
+2. open the extracted folder
+3. open a cmd in that folder
+4. type ` .\gradlew.bat build ` in the cmd 
+5. type ` .\gradlew.bat jar ` in the cmd
+
+## for linux 
+1. download this repo's zip file and extract it
+2. open a terminal in the extracted folder
+3. type ` ./gradlew build ` in the terminal
+4.  type ` ./gradlew jar ` in the terminal
