@@ -1,0 +1,8 @@
+package dev.moonrise.events;
+
+public enum EventDirection {
+
+    OUTGOING,
+    INCOMING;
+
+}

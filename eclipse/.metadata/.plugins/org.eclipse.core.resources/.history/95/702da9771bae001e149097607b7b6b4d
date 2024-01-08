@@ -1,0 +1,5 @@
+package dev.moonrise.ui;
+
+public class HUD {
+
+}

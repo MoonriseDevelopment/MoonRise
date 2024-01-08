@@ -1,0 +1,5 @@
+package dev.moonrise.events;
+
+public class EventType {
+
+}

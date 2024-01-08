@@ -1,0 +1,5 @@
+package dev.moonrise.command.commands;
+
+public class help {
+
+}
