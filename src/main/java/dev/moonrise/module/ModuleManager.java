@@ -3,6 +3,9 @@ package dev.moonrise.module;
 import java.util.ArrayList;
 
 import dev.moonrise.MoonRise;
+import dev.moonrise.command.CommandManager;
+import dev.moonrise.event.Event;
+import dev.moonrise.event.events.EventChat;
 import dev.moonrise.module.movement.*;
 import dev.moonrise.module.player.FastPlace;
 import net.minecraft.client.Minecraft;
@@ -76,5 +79,10 @@ public class ModuleManager {
 		
 		Minecraft.getMinecraft().thePlayer.addChatMessage(new ChatComponentText(message));
 	}
+    public static void onEvent(Event e) {
+        if(e instanceof EventChat) {
+            CommandManager.handleChat((EventChat)e);
+        }
+    }
     
 }
