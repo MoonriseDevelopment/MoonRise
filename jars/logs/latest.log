@@ -1,0 +1,21 @@
+[13:10:31] [Client thread/INFO]: Setting user: Player109
+[13:10:31] [Client thread/INFO]: (Session ID is token:0:Player109)
+[13:10:33] [Client thread/INFO]: LWJGL Version: 2.9.4
+[13:10:35] [Client thread/INFO]: Reloading ResourceManager: Default
+[13:10:35] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:10:35] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[13:10:35] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:10:35] [Thread-5/INFO]: OpenAL initialized.
+[13:10:35] [Sound Library Loader/INFO]: Sound engine started
+[13:10:38] [Client thread/INFO]: Created: 512x512 textures-atlas
+[13:10:48] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[13:10:48] [Server thread/INFO]: Generating keypair
+[13:10:49] [Server thread/INFO]: Preparing start region for level 0
+[13:10:50] [Server thread/INFO]: Preparing spawn area: 61%
+[13:10:50] [Server thread/INFO]: Changing view distance to 12, from 10
+[13:10:50] [Server thread/INFO]: Player109[local:E:238142a2] logged in with entity id 271 at (237.30000001192093, 66.78502770378924, 276.20701800709276)
+[13:10:50] [Server thread/INFO]: Player109 joined the game
+[13:11:07] [Server thread/INFO]: Saving and pausing game...
+[13:11:07] [Server thread/INFO]: Saving chunks for level 'survival world'/Overworld
+[13:11:08] [Server thread/INFO]: Saving chunks for level 'survival world'/Nether
+[13:11:08] [Server thread/INFO]: Saving chunks for level 'survival world'/The End
