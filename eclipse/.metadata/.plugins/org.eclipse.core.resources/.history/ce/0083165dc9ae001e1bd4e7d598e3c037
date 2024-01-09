@@ -1,0 +1,5 @@
+package dev.moonrise.event.events;
+
+public class EventMove {
+
+}

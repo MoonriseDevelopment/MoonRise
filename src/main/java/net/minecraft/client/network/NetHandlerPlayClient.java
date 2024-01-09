@@ -815,6 +815,18 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
     {
         this.netManager.sendPacket(p_147297_1_);
     }
+    
+    public void addToSendQueueWithoutEvent(final Packet p_147297_1_) {
+        this.netManager.sendPacketWithoutEvent(p_147297_1_);
+    }
+    
+    public void addToReceiveQueue(final Packet p_147297_1_) {
+        this.netManager.receivePacket(p_147297_1_);
+    }
+
+    public void addToReceiveQueueWithoutEvent(final Packet p_147297_1_) {
+        this.netManager.receivePacketWithoutEvent(p_147297_1_);
+    }
 
     public void handleCollectItem(S0DPacketCollectItem packetIn)
     {

@@ -1,0 +1,24 @@
+package dev.moonrise.util.player;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.network.Packet;
+
+public final class PacketUtil {
+    public final Minecraft mc = Minecraft.getMinecraft();
+
+    public static void sendPacket(final Packet<?> packet) {
+        mc.getNetHandler().addToSendQueue(packet);
+    }
+
+    public static void sendPacketWithoutEvent(final Packet<?> packet) {
+        mc.getNetHandler().addToSendQueueWithoutEvent(packet);
+    }
+
+    public static void receivePacket(final Packet<?> packet) {
+        mc.getNetHandler().addToReceiveQueue(packet);
+    }
+
+    public static void receivePacketWithoutEvent(final Packet<?> packet) {
+        mc.getNetHandler().addToReceiveQueueWithoutEvent(packet);
+    }
+}

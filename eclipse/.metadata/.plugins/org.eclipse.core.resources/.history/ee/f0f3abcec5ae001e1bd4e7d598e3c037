@@ -1,0 +1,5 @@
+package dev.moonrise.module.movement;
+
+public class ClickTP {
+
+}

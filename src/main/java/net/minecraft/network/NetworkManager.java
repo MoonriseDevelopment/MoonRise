@@ -2,6 +2,8 @@ package net.minecraft.network;
 
 import com.google.common.collect.Queues;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
+
+import dev.moonrise.event.events.EventReceivePacket;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelException;
@@ -160,6 +162,30 @@ public class NetworkManager extends SimpleChannelInboundHandler<Packet>
             }
         }
     }
+    
+    public void receivePacket(Packet packet) {
+        if (this.channel.isOpen()) {
+            try {
+                final EventReceivePacket event = new EventReceivePacket(packet);
+
+                if (event.isCancelled()) return;
+
+                event.getPacket().processPacket(this.packetListener);
+            } catch (ThreadQuickExitException var4) {
+                ;
+            }
+        }
+    }
+
+    public void receivePacketWithoutEvent(Packet packet) {
+        if (this.channel.isOpen()) {
+            try {
+                packet.processPacket(this.packetListener);
+            } catch (ThreadQuickExitException var4) {
+                ;
+            }
+        }
+    }
 
     /**
      * Sets the NetHandler for this NetworkManager, no checks are made if this handler is suitable for the particular
@@ -192,6 +218,23 @@ public class NetworkManager extends SimpleChannelInboundHandler<Packet>
                 this.readWriteLock.writeLock().unlock();
             }
         }
+    }
+    
+    public void sendPacketWithoutEvent(Packet packetIn) {
+
+        if (this.isChannelOpen()) {
+            this.flushOutboundQueue();
+            this.dispatchPacket(packetIn, (GenericFutureListener<? extends Future<? super Void>>[]) null);
+        } else {
+            this.readWriteLock.writeLock().lock();
+
+            try {
+                this.outboundPacketsQueue.add(new NetworkManager.InboundHandlerTuplePacketListener(packetIn, (GenericFutureListener[]) null));
+            } finally {
+                this.readWriteLock.writeLock().unlock();
+            }
+        }
+
     }
 
     public void sendPacket(Packet packetIn, GenericFutureListener <? extends Future <? super Void >> listener, GenericFutureListener <? extends Future <? super Void >> ... listeners)

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="dev.moonrise.module.player.FastPlace"/>
+    <fullyQualifiedTypeName name="dev.moonrise.command.Command"/>
+    <fullyQualifiedTypeName name="dev.moonrise.command.commands.Help"/>
+    <fullyQualifiedTypeName name="net.minecraft.network.Packet"/>
+    <fullyQualifiedTypeName name="dev.moonrise.command.CommandManager"/>
+    <fullyQualifiedTypeName name="dev.moonrise.event.events.EventChat"/>
+    <fullyQualifiedTypeName name="dev.moonrise.event.Event"/>
+</qualifiedTypeNameHistroy>

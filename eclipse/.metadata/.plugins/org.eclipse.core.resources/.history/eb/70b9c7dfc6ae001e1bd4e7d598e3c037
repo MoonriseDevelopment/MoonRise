@@ -1,0 +1,5 @@
+package dev.moonrise.util.math;
+
+public class TimeUtil {
+
+}

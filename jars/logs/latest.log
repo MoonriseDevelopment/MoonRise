@@ -1,28 +1,10 @@
-[15:31:27] [Client thread/INFO]: Setting user: Player62
-[15:31:27] [Client thread/INFO]: (Session ID is token:0:Player62)
-[15:31:28] [Client thread/INFO]: LWJGL Version: 2.9.4
-[15:31:29] [Client thread/INFO]: Reloading ResourceManager: Default
-[15:31:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:31:29] [Thread-5/INFO]: Initializing LWJGL OpenAL
-[15:31:29] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:31:29] [Thread-5/INFO]: OpenAL initialized.
-[15:31:30] [Sound Library Loader/INFO]: Sound engine started
-[15:31:31] [Client thread/INFO]: Created: 512x512 textures-atlas
-[15:31:37] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
-[15:31:37] [Server thread/INFO]: Generating keypair
-[15:31:37] [Server thread/INFO]: Preparing start region for level 0
-[15:31:38] [Server thread/INFO]: Changing view distance to 12, from 10
-[15:31:38] [Server thread/INFO]: Player62[local:E:dc942dbf] logged in with entity id 237 at (221.20425598014617, 70.0, 278.29018018901724)
-[15:31:38] [Server thread/INFO]: Player62 joined the game
-[15:31:42] [Server thread/INFO]: <Player62> .
-[15:31:42] [Client thread/INFO]: [CHAT] <Player62> .
-[15:31:45] [Server thread/INFO]: <Player62> .help
-[15:31:45] [Client thread/INFO]: [CHAT] <Player62> .help
-[15:31:46] [Server thread/INFO]: Saving and pausing game...
-[15:31:46] [Server thread/INFO]: Saving chunks for level 'survival world'/Overworld
-[15:31:46] [Server thread/INFO]: Saving chunks for level 'survival world'/Nether
-[15:31:46] [Server thread/INFO]: Saving chunks for level 'survival world'/The End
-[15:31:55] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[15:31:55] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[15:31:57] [Chunk Batcher 1/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[15:32:03] [Chunk Batcher 1/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[13:06:40] [Client thread/INFO]: Setting user: Player359
+[13:06:40] [Client thread/INFO]: (Session ID is token:0:Player359)
+[13:06:42] [Client thread/INFO]: LWJGL Version: 2.9.4
+[13:06:42] [Client thread/INFO]: Reloading ResourceManager: Default
+[13:06:42] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[13:06:43] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[13:06:43] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[13:06:43] [Thread-5/INFO]: OpenAL initialized.
+[13:06:43] [Sound Library Loader/INFO]: Sound engine started
+[13:06:45] [Client thread/INFO]: Created: 512x512 textures-atlas
