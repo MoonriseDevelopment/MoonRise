@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="&quot;rise&quot;"/>
+		<item key="selection" value="parent"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="parent"/>
+			<item value=" 1.8"/>
+			<item value="Minecraft"/>
+			<item value="channelRead0"/>
+			<item value="addToSendQueue"/>
+			<item value="addToReceiveQueue"/>
+			<item value="sendPacketWithoutEvent"/>
+			<item value="ReentrantReadWriteLock"/>
+			<item value="sendPacket"/>
+			<item value="addto"/>
+			<item value="add"/>
+			<item value="mc"/>
 			<item value="&quot;rise&quot;"/>
 			<item value="rise"/>
 		</list>

@@ -23,7 +23,6 @@ public class ModuleManager {
 
         //MOVEMENT
         newMod(new Fly());
-        newMod(new ClickTP());
 
 
         //PLAYER

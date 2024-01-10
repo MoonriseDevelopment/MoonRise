@@ -1,0 +1,45 @@
+package dev.moonrise.module.player;
+
+import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
+import dev.moonrise.module.Module;
+import dev.moonrise.module.Category;
+
+public final class Reach extends Module {
+
+    public Reach() {
+        super("Reach", Keyboard.KEY_R, Category.PLAYER);
+    }
+	
+    public final int range = 6;
+    private final double bufferDecrease = 0.1;
+    private final int maxBuffer = 200;
+    private final boolean bufferAbuse = false;
+
+    private int lastId, attackTicks;
+    private double combo;
+    private int exempt;
+
+    @EventLink()
+    public final Listener<AttackEvent> onAttackEvent = event -> {
+
+        final Entity entity = event.getTarget();
+
+        if (this.bufferAbuse.getValue()) {
+            if (RayCastUtil.rayCast(RotationComponent.rotations, 3.0D).typeOfHit != MovingObjectPosition.MovingObjectType.ENTITY) {
+                if ((this.attackTicks > 9 || entity.getEntityId() != this.lastId) && this.combo < this.maxBuffer.getValue().intValue()) {
+                    this.combo++;
+                } else {
+                    event.setCancelled(true);
+                }
+            } else {
+                this.combo = Math.max(0, this.combo - this.bufferDecrease.getValue().doubleValue());
+            }
+        } else {
+            this.combo = 0;
+        }
+
+        this.lastId = entity.getEntityId();
+        this.attackTicks = 0;
+    };
+}

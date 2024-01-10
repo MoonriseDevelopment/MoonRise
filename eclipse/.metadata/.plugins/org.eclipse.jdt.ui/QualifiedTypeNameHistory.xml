@@ -7,4 +7,10 @@
     <fullyQualifiedTypeName name="dev.moonrise.command.CommandManager"/>
     <fullyQualifiedTypeName name="dev.moonrise.event.events.EventChat"/>
     <fullyQualifiedTypeName name="dev.moonrise.event.Event"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+    <fullyQualifiedTypeName name="dev.moonrise.event.events.EventReceivePacket"/>
+    <fullyQualifiedTypeName name="dev.moonrise.util.player.PacketUtil"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="net.minecraft.client.renderer.GlStateManager"/>
 </qualifiedTypeNameHistroy>
