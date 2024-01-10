@@ -1,0 +1,24 @@
+package dev.moonrise.module.misc;
+
+import org.lwjgl.input.Keyboard;
+import dev.moonrise.event.Event;
+import dev.moonrise.event.events.EventUpdate;
+import dev.moonrise.module.Category;
+import dev.moonrise.module.Module;
+import dev.moonrise.settings.Setting;
+import dev.moonrise.util.MathUtil;
+
+public class Timer extends Module{
+    private final Setting speed = new Setting("Speed", this, 1, 0.1, 3, false),
+    random = new Setting("Random", this, 1, 0, 1, false);
+    public Timer() {
+        super("Timer", KeyboardConstants.KEY_NONE, Category.MISC);
+        addAll(random, speed);
+    }
+
+    @Override
+    public void onEvent(Event e) {
+        if(e instanceof EventUpdate && e.isPre())
+            mc.timer.timerSpeed = (float) speed.getValDouble() + (float)MathUtil.randomNumber(random.getValDouble(), -random.getValDouble());
+    }
+}

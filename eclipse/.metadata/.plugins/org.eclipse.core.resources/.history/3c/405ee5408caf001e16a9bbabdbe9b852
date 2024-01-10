@@ -1,0 +1,19 @@
+package dev.moonrise.module.render;
+
+import org.lwjgl.input.keyboard;
+import dev.moonrise.module.Category;
+import dev.moonrise.module.Module;
+
+public class NoWeather extends Module {
+    public NoWeather() {
+        super("NoWeather", KeyboardConstants.KEY_NONE, Category.RENDER);
+    }
+
+    public void onUpdate() {
+        if(this.isToggled()) {
+            mc.theWorld.setThunderStrength(0);
+            mc.theWorld.setRainStrength(0);
+        }
+    }
+    
+}

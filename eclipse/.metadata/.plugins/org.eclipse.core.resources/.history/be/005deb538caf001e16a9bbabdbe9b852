@@ -1,0 +1,24 @@
+package dev.moonrise.module.render;
+
+import dev.moonrise.module.Category;
+import dev.moonrise.module.Module;
+import dev.moonrise.util.MobEspUtil;
+import org.lwjgl.input.Keyboard;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+
+public class PlayerEsp extends Module {
+    public PlayerEsp() {
+        super("PlayerEsp", KeyboardConstants.KEY_NONE, Category.RENDER);
+    }
+
+	public void onRender() {
+		if(this.isToggled()) {
+			for(Object e : mc.theWorld.loadedEntityList) {
+				if(e instanceof EntityPlayer) {
+					MobEspUtil.entityESPBox((Entity)e, 0);
+				}
+			}
+		}
+    }
+}

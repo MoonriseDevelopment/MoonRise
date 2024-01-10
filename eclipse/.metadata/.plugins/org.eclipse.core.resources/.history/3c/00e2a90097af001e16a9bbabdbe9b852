@@ -1,0 +1,22 @@
+package dev.moonrise.module.movement;
+
+import dev.moonrise.MoonRise;
+import dev.moonrise.module.Category;
+import dev.moonrise.module.Module;
+import org.lwjgl.input.Keyboard;
+
+public class Speed extends Module{
+    public Speed() {
+		super("Speed", Keyboard.KEY_NONE, Category.MOVEMENT);
+		Dragon.setmgr.rSetting(new Setting("Speed", this, 3.0, 1.0, 3.0, false));
+	}
+	
+	public void onUpdate() {
+		if(this.isToggled()) {
+			if(mc.thePlayer.onGround) {
+				mc.thePlayer.motionX *= Dragon.setmgr.getSettingByName("Speed").getValDouble();
+				mc.thePlayer.motionZ *= Dragon.setmgr.getSettingByName("Speed").getValDouble();
+			}
+		}
+	}
+}

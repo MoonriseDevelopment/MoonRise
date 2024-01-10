@@ -1,13 +1,26 @@
-[13:07:04] [Client thread/INFO]: Setting user: Player187
-[13:07:04] [Client thread/INFO]: (Session ID is token:0:Player187)
-[13:07:05] [Client thread/INFO]: LWJGL Version: 2.9.4
-[13:07:06] [Client thread/INFO]: Reloading ResourceManager: Default
-[13:07:06] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[13:07:06] [Thread-5/INFO]: Initializing LWJGL OpenAL
-[13:07:06] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[13:07:06] [Thread-5/INFO]: OpenAL initialized.
-[13:07:07] [Sound Library Loader/INFO]: Sound engine started
-[13:07:08] [Client thread/INFO]: Created: 512x512 textures-atlas
-[13:12:04] [Client thread/INFO]: Stopping!
-[13:12:04] [Client thread/INFO]: SoundSystem shutting down...
-[13:12:04] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:30:47] [Client thread/INFO]: Setting user: Player218
+[11:30:47] [Client thread/INFO]: (Session ID is token:0:Player218)
+[11:30:48] [Client thread/INFO]: LWJGL Version: 2.9.4
+[11:30:49] [Client thread/INFO]: Reloading ResourceManager: Default
+[11:30:49] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:30:50] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[11:30:50] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:30:50] [Thread-5/INFO]: OpenAL initialized.
+[11:30:50] [Sound Library Loader/INFO]: Sound engine started
+[11:30:51] [Client thread/INFO]: Created: 512x512 textures-atlas
+[11:30:56] [Server thread/INFO]: Starting integrated minecraft server version 1.8.9
+[11:30:56] [Server thread/INFO]: Generating keypair
+[11:30:56] [Server thread/INFO]: Preparing start region for level 0
+[11:30:57] [Server thread/INFO]: Preparing spawn area: 75%
+[11:30:58] [Server thread/INFO]: Changing view distance to 12, from 10
+[11:30:58] [Server thread/INFO]: Player218[local:E:300f2c9f] logged in with entity id 258 at (216.23373051247063, 70.0, 278.936532776939)
+[11:30:58] [Server thread/INFO]: Player218 joined the game
+[11:31:30] [Server thread/INFO]: Saving and pausing game...
+[11:31:30] [Server thread/INFO]: Saving chunks for level 'survival world'/Overworld
+[11:31:30] [Server thread/INFO]: Saving chunks for level 'survival world'/Nether
+[11:31:30] [Server thread/INFO]: Saving chunks for level 'survival world'/The End
+[11:31:59] [Chunk Batcher 0/WARN]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[11:32:39] [Server thread/INFO]: Saving and pausing game...
+[11:32:39] [Server thread/INFO]: Saving chunks for level 'survival world'/Overworld
+[11:32:39] [Server thread/INFO]: Saving chunks for level 'survival world'/Nether
+[11:32:39] [Server thread/INFO]: Saving chunks for level 'survival world'/The End

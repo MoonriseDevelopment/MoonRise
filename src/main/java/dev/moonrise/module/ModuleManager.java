@@ -7,7 +7,8 @@ import dev.moonrise.command.CommandManager;
 import dev.moonrise.event.Event;
 import dev.moonrise.event.events.EventChat;
 import dev.moonrise.module.movement.*;
-import dev.moonrise.module.player.FastPlace;
+import dev.moonrise.module.player.*;
+import dev.moonrise.module.render.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 
@@ -30,7 +31,10 @@ public class ModuleManager {
         newMod(new FastPlace());
 
         //RENDER
-
+        newMod(new Fullbright());
+        newMod(new NoWeather());
+        newMod(new Trails());
+        newMod(new Xray());
 
 
         //MISC
