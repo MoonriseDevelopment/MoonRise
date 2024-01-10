@@ -28,6 +28,14 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 }
 
+jar {
+    configurations.shade.each { dep ->
+        from(project.zipTree(dep)) {
+            exclude 'META-INF', 'META-INF/**'
+        }
+    }
+}
+
 tasks.register('runclient', JavaExec) {
     group = "MCP"
     description = "Runs the client"
